@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FeedbackSubmit from "./FeedbackSubmit";
 
 class Photo extends Component {
   constructor() {
@@ -9,7 +10,12 @@ class Photo extends Component {
   }
 
   render() {
-    return <div>{this.state.msg}</div>;
+    return (
+      <div>
+        {this.state.msg}
+        <FeedbackSubmit />
+      </div>
+    );
   }
 }
 
