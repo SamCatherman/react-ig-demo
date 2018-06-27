@@ -8,7 +8,7 @@ const Feed = () => {
     <Photo photo={photo} key={photo._id} />
   ));
   return (
-    <div>
+    <div className="ui column">
       <h2>I am the Feed</h2>
       {photos}
     </div>
