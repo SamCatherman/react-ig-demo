@@ -5,9 +5,14 @@ class Photo extends Component {
   constructor() {
     super();
     this.state = {
-      msg: ""
+      likes: 0,
+      comments: []
     };
   }
+
+  handleLikesClick = () => {
+    console.log("clicked");
+  };
 
   render() {
     return (
@@ -17,6 +22,7 @@ class Photo extends Component {
         </div>
         <div className="content" />
         <FeedbackSubmit />
+        <div>Likes: {this.state.likes}</div>
       </div>
     );
   }
