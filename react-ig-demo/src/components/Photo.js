@@ -5,7 +5,7 @@ class Photo extends Component {
   constructor() {
     super();
     this.state = {
-      msg: ""
+      msg: "HELOOOO FROM PHOTO"
     };
   }
 
