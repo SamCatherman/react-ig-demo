@@ -6,12 +6,6 @@ const Feed = () => {
     <div>
       <h2>I am the Feed</h2>
       <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
     </div>
   );
 };
