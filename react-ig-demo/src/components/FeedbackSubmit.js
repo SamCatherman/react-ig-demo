@@ -2,11 +2,11 @@ import React from "react";
 import CommentBox from "./CommentBox";
 import LikeButton from "./LikeButton";
 
-const FeedbackSubmit = () => {
+const FeedbackSubmit = props => {
   return (
     <div>
       <CommentBox />
-      <LikeButton />
+      <LikeButton likePhoto={props.handleLikesClick} />
     </div>
   );
 };
