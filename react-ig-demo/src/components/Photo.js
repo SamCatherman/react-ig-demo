@@ -11,7 +11,9 @@ class Photo extends Component {
   }
 
   handleLikesClick = () => {
-    console.log("clicked");
+    this.setState({
+      likes: this.state.likes + 1
+    });
   };
 
   render() {
@@ -21,7 +23,7 @@ class Photo extends Component {
           <img src={this.props.photo.picture} alt="pic" />
         </div>
         <div className="content" />
-        <FeedbackSubmit />
+        <FeedbackSubmit handleLikesClick={this.handleLikesClick} />
         <div>Likes: {this.state.likes}</div>
       </div>
     );

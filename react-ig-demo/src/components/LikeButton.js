@@ -1,6 +1,12 @@
 import React from "react";
 
-const LikeButton = () => {
-  return <button>💙</button>;
+const LikeButton = props => {
+  return (
+    <button onClick={props.likePhoto}>
+      <span role="img" aria-label="heart">
+        💙
+      </span>
+    </button>
+  );
 };
 export default LikeButton;
